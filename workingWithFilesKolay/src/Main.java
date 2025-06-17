@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Dosya ismi giriniz");
         Scanner scanner=new Scanner(System.in);
         String dosyaIsmi=scanner.nextLine();
-        File file=new File("C:\\Users\\20Erd\\OneDrive\\Masaüstü\\javaFinal\\files\\"+dosyaIsmi);
+        File file=new File("C:\\Users\\20Erd\\OneDrive\\Masaüstü\\javaFinal\\files\\"+dosyaIsmi+".txt");
 
         if (file.exists()){
             System.out.println("Dosya mevcuttur: "+file.getName());
@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static void fileCreate(String dosyaIsmi){
-        File file=new File("C:\\Users\\20Erd\\OneDrive\\Masaüstü\\javaFinal\\files\\"+dosyaIsmi+(".txt"));
+        File file=new File("C:\\Users\\20Erd\\OneDrive\\Masaüstü\\javaFinal\\files\\"+dosyaIsmi+".txt");
 
         try {
             if (file.createNewFile()){
